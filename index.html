@@ -462,32 +462,23 @@ TikTok
 </footer>
 
 <script>
+const slider = document.querySelector('.projects-container');
 
-for(let i=0;i<25;i++){
+document.querySelectorAll('details').forEach(item => {
 
-let sakura=document.createElement("div");
+item.addEventListener('toggle', () => {
 
-sakura.innerHTML="";
+const opened = document.querySelector('details[open]');
 
-.sakura{
-position:fixed;
-top:-20px;
-width:12px;
-height:18px;
-background:#8b0000;
-border-radius:50% 0 50% 50%;
-transform:rotate(45deg);
-animation:fall linear infinite;
-pointer-events:none;
-box-shadow:
-0 0 10px rgba(139,0,0,.8),
-0 0 20px rgba(255,0,0,.4);
-opacity:.85;
+if(opened){
+slider.style.animationPlayState = 'paused';
+}else{
+slider.style.animationPlayState = 'running';
 }
 
+});
 
-}
-
+});
 </script>
 
 </body>
