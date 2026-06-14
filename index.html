@@ -173,7 +173,7 @@ width:100%;
 display:flex;
 gap:25px;
 width:max-content;
-animation:scrollLeft 20s linear infinite;
+animation:scrollLeft 15s linear infinite;
 padding-top:20px;
 }
 
@@ -203,6 +203,31 @@ transform:translateX(0);
 }
 100%{
 transform:translateX(-50%);
+}
+}
+details{
+margin-top:15px;
+}
+
+summary{
+cursor:pointer;
+list-style:none;
+}
+
+summary::-webkit-details-marker{
+display:none;
+}
+
+.project-card h3{
+text-align:center;
+color:#c1121f;
+margin-bottom:10px;
+}
+
+.project-card p{
+margin-top:15px;
+margin-bottom:15px;
+line-height:1.6;
 }
 
 </style>
@@ -265,26 +290,140 @@ TikTok
 
 <div class="project-card">
 <h3>Чаты</h3>
-<p>Общение, знакомства и участие в проектах DEMUR.</p>
-<a class="button" href="https://t.me/dmurskie/5">Подробнее</a>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Общение, знакомства и участие в проектах DEMUR.
+</p>
+
+<a class="button" href="https://t.me/dmurskie/5">
+Перейти
+</a>
+</details>
+
 </div>
 
 <div class="project-card">
 <h3>MUR</h3>
-<p>Место поиска КФ, семьи, СП и новых знакомств.</p>
-<a class="button" href="https://t.me/isdmur">Подробнее</a>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Место поиска КФ, семьи, СП и новых знакомств.
+</p>
+
+<a class="button" href="https://t.me/isdmur">
+Перейти
+</a>
+</details>
+
 </div>
 
 <div class="project-card">
 <h3>MEDIA VIRT</h3>
-<p>Медиа-площадка проекта DEMUR. Новости, контент и публикации.</p>
-<a class="button" href="#">Подробнее</a>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Медиа-площадка проекта DEMUR. Новости, контент и публикации.
+</p>
+
+<p>
+Ссылка появится позже.
+</p>
+</details>
+
 </div>
 
 <div class="project-card">
 <h3>FRAY</h3>
-<p>Место, где вы можете отвлечься и насладиться работой прекрасных хостов.</p>
-<a class="button" href="#">Подробнее</a>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Место, где вы можете отвлечься и насладиться работой прекрасных хостов.
+</p>
+
+<p>
+Ссылка появится позже.
+</p>
+</details>
+
+</div>
+
+<!-- Копия для бесконечной прокрутки -->
+
+<div class="project-card">
+<h3>Чаты</h3>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Общение, знакомства и участие в проектах DEMUR.
+</p>
+
+<a class="button" href="https://t.me/dmurskie/5">
+Перейти
+</a>
+</details>
+
+</div>
+
+<div class="project-card">
+<h3>MUR</h3>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Место поиска КФ, семьи, СП и новых знакомств.
+</p>
+
+<a class="button" href="https://t.me/isdmur">
+Перейти
+</a>
+</details>
+
+</div>
+
+<div class="project-card">
+<h3>MEDIA VIRT</h3>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Медиа-площадка проекта DEMUR. Новости, контент и публикации.
+</p>
+
+<p>
+Ссылка появится позже.
+</p>
+</details>
+
+</div>
+
+<div class="project-card">
+<h3>FRAY</h3>
+
+<details>
+<summary class="button">Подробнее</summary>
+
+<p>
+Место, где вы можете отвлечься и насладиться работой прекрасных хостов.
+</p>
+
+<p>
+Ссылка появится позже.
+</p>
+</details>
+
 </div>
 
 </div>
